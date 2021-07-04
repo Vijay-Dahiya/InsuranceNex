@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:id="@+id/text1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:text="Pending Activation"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:background="#C4C4C4"
+          android:drawableStart="@drawable/vector__6_"
+          android:drawablePadding="32dp"
+          android:padding="15dp"/>
+     <TextView
+         android:id="@+id/text2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/text1"
+          android:text="2, Septemberd 2020"
+          android:layout_marginTop="20dp"
+          android:textColor="@color/black"/>
+     <TextView
+         android:id="@+id/text3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/text2"
+         android:text="Status : Expired"
+         android:layout_marginTop="7dp"
+         android:textColor="#FE122E"
+         />
+     <TextView
+         android:id="@+id/text4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/text3"
+          android:drawableTop="@drawable/emojione_monotone_mobile_phone_off"
+          android:text="Nexus 5 Insurance"
+          android:layout_marginTop="40dp"
+          android:textSize="20sp"
+         android:drawablePadding="3dp"
+          android:textColor="@color/black"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/text4"
+          android:background="#18F148"
+          android:text="Activate Insurance Now"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:padding="20dp"
+          android:textColor="#ffffff"
+         android:layout_margin="34dp"/>
+
+     <TextView
+         android:id="@+id/btm1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#C4C4C4"
+         android:fontFamily="@font/roboto_medium"
+         android:padding="30dp"
+         android:text="All drops and breakage including cracked screen"
+         android:textColor="@color/black"
+         android:textSize="15sp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent" />
+
+     <TextView
+          android:id="@+id/btn2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toTopOf="@+id/btm1"
+          android:text="Coverage"
+         android:fontFamily="@font/roboto_medium"
+         android:textColor="@color/black"
+         android:textSize="15sp"
+          android:layout_marginTop="4dp"/>
+
+     <View
+         android:id="@+id/views"
+         android:layout_width="401dp"
+         android:layout_height="130dp"
+         android:layout_marginBottom="25dp"
+         android:background="#C4C4C4"
+         app:layout_constraintBottom_toBottomOf="@+id/btn2"
+         app:layout_constraintStart_toStartOf="parent" />
+
+     <TextView
+         android:id="@+id/device"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/views"
+          android:text="Device  :"
+          android:layout_margin="15dp"
+         android:fontFamily="@font/roboto_medium"
+          android:textColor="@color/white"
+          android:textSize="20sp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/device"
+         android:text="Insurance term  :"
+         android:layout_margin="15dp"
+         android:textColor="@color/white"
+         android:textSize="20sp"
+         android:fontFamily="@font/roboto_medium"/>
+
+
+     <TextView
+         android:id="@+id/device2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/views"
+         android:text="LGE Nexus 5"
+         android:layout_margin="15dp"
+         android:fontFamily="@font/roboto_medium"
+         android:textColor="@color/white"
+         android:textSize="20sp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/device2"
+         android:text="12 Months"
+         android:layout_margin="15dp"
+         android:textColor="@color/white"
+         android:textSize="20sp"
+         android:fontFamily="@font/roboto_medium"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
